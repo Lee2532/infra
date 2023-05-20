@@ -1,0 +1,18 @@
+webserver:
+  defaultUser:
+    username: admin
+    password: admin
+
+  service:
+    type: LoadBalancer
+
+executor: KubernetesExecutor
+
+
+redis:
+  enabled: false
+
+data:
+  metadataConnection:
+    user: postgres
+    pass: postgres
