@@ -1,11 +1,17 @@
+yamlApplicationConfig:
+  kafka:
+    clusters:
+      - name: local
+        bootstrapServers: localhost:9092
+
 service:
   type: LoadBalancer
   port: 80
 
 resources:
    limits:
-     cpu: 200m
-     memory: 512Mi
+     cpu: 1000m
+     memory: 1024Mi
    requests:
      cpu: 200m
      memory: 256Mi
